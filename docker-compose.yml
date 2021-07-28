@@ -27,7 +27,7 @@ services:
     volumes:
       - $PWD/postgres-data:/var/lib/postgresql/data
     environment:
-      - POSTGRES_PASSWORD=mysecretpassword 
+      - POSTGRES_PASSWORD=********** 
     ports:  
       - 8890:5432
   pgadmin:
@@ -37,6 +37,6 @@ services:
     environment:
       - PGADMIN_LISTEN_PORT=5050
       - PGADMIN_DEFAULT_EMAIL=user@domain.com
-      - PGADMIN_DEFAULT_PASSWORD=SuperSecret
+      - PGADMIN_DEFAULT_PASSWORD=*********
 
 
